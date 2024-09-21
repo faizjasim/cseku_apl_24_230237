@@ -1,16 +1,18 @@
-#include <iostream>
+#include <iostream> // Include the iostream library for input and output operations
+using namespace std;
 
 int main() {
-    int num = 0;
+    int num = 0; // Initialize variable to store the input number
 
-    std::cout << "Enter an integer: ";
-    std::cin >> num;
+    cout << "Enter an integer: "; // Prompt the user for input
+    cin >> num; // Read the input value
 
+    // Check if the number is even or odd and display the result
     if (num % 2 == 0) {
-        std::cout << num << " is even." << std::endl;
+        cout << num << " is even." << endl;
     } else {
-        std::cout << num << " is odd." << std::endl;
+        cout << num << " is odd." << endl;
     }
 
-    return 0;
+    return 0; // Indicate successful program termination
 }

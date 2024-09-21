@@ -1,16 +1,18 @@
-#include <iostream>
+#include <iostream> 
+using namespace std;
 
 int main() {
-    int n = 0, factorial = 1;
+    int n = 0, factorial = 1; // Initialize variables
 
-    std::cout << "Enter a positive integer: ";
-    std::cin >> n;
+    cout << "Enter a positive integer: "; // Prompt the user for input
+    cin >> n; // Read the input value
 
+    // Calculate the factorial of the number
     for (int i = 1; i <= n; ++i) {
-        factorial *= i;
+        factorial *= i; // Update factorial
     }
 
-    std::cout << "Factorial of " << n << " = " << factorial << std::endl;
+    cout << "Factorial of " << n << " = " << factorial << endl; // Display the result
 
     return 0;
 }
